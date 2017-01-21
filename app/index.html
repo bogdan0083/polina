@@ -8,6 +8,7 @@
     <title>Главная</title>
     <!--meta(name='description' content='')-->
     <!--meta(name='keywords' content='')-->
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
     <!-- build:css styles/main.css-->
     <link href="styles/main.css" rel="stylesheet">
     <!-- endbuild-->
@@ -17,16 +18,99 @@
     <div class="page-wrapper">
         <!-- begin header -->
         <header class="header">
+            <div class="container">
+                <div class="header__in">
+                    <a class="btn" href="#works" role="button">Work</a>
+                    <a href="" class="logo">
+                        Polina Poroshina
+                        <span class="logo__caption">web and graphic designer</span>
+                    </a>
+                    <a class="btn" href="#contact" role="button">Contact</a>
+                </div>
+            </div>
         </header>
         <!-- end header -->
         <!-- begin page-content -->
         <div id="page-content">
+            <section class="intro">
+                <div class="container">
+                    <div class="intro__in">
+                        <img src="images/me.png" alt="Hi! That's me!">
+                        <h2 class="heading heading--red">Hi There!</h2>
+                        <p>My name is Polina. I live in the city of Saratov, Russia. I’m a Web and Graphic Designer as well a Big Dreamer with an obsession for simplicity. I have been designing for over 5 years.  I like to create clean, usable design for the web, cute logos, unique neat icons and illustration of funny characters. I just love my work and I leave a little piece of my heart in everything I do. If you’re looking for an experienced and enthusiastic designer, you’ve found me! </p>
+                    </div>
+                    <section class="lifetime">
+                        <div class="lifetime__col">
+                            <h3 class="heading heading--red">during working time</h3>
+                            <div class="lifetime__icons">
 
+                            </div>
+                        </div>
+                        <div class="lifetime__col">
+                            <h3 class="heading heading--red">during free time</h3>
+                            <div class="lifetime__icons">
+
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+            <!-- start portfolio -->
+               <section class="portfolio">
+                   <div class="portfolio-sort">
+                       <ul>
+                           <li><a href="" class="portfolio__sort-link">All</a></li>
+                           <li><a href="" class="portfolio__sort-link">Web Design</a></li>
+                           <li><a href="" class="portfolio__sort-link">Logo Design</a></li>
+                           <li><a href="" class="portfolio__sort-link">Print Design</a></li>
+                           <li><a href="" class="portfolio__sort-link">Icons & Illustration</a></li>
+                           <li><a href="" class="portfolio__sort-link">Freehand</a></li>
+                       </ul>
+                       <div class="portfolio__items">
+                           <a href="" class="portfolio-item">
+                               <div class="portfolio-item__name"><span>Fitmarket</span></div>
+                           </a>
+                       </div>
+                   </div>
+               </section>
+            <!-- end portfolio -->
+            <!-- start contact -->
+               <section class="contact">
+                   <div class="container">
+                       <div class="contact__in">
+                           <img src="images/me-mail.png" alt="Me holding a mail!" class="contact__image">
+                           <h2 class="heading heading--red">Hi There!</h2>
+                           <p>No matter If you have a question or a project that you want to get started or maybe you just want to hang out together - ride a scooter, go to the theatre, go on a trip or talk about books or If you just want to say Hi,send me an email at <a href="mailto:hello@poroshina.com" class="red-link">hello@poroshina.com</a> or use the contact form:</p>
+                           <form class="contact-form">
+                               <div class="input">
+                                   <span class="input__placeholder">Name</span>
+                                   <input type="text" name="user-name" class="input__control">
+                               </div>
+                               <div class="input">
+                                   <span class="input__placeholder">E-mail</span>
+                                   <input type="text" name="user-mail" class="input__control">
+                               </div>
+                               <div class="input">
+                                   <span class="input__placeholder">Message</span>
+                                   <textarea name="user-text" class="input__control input__control--textarea"></textarea>
+                               </div>
+                               <button class="btn js-btn-submit">Send</button>
+                           </form>
+                       </div>
+                   </div>
+               </section>
+            <!-- end contact -->
         </div>
         <!-- end page-content -->
         <!-- begin footer -->
         <footer class="footer">
+            <div class="container">
+                <button class="up js-up"></button>
+                <div class="copyright">Copyright © 2017 Polina Poroshina. All rights reserved.</div>
+                <div class="socials">
 
+                </div>
+            </div>
         </footer>
         <!-- end footer -->
     </div>

@@ -80,8 +80,7 @@ webfont(family, file, weight = normal, style = normal)
     src font-url(file + '.eot')
     src font-url(file + '.eot?#iefix') format('embedded-opentype'),
     font-url(file + '.woff') format('woff'),
-    font-url(file + '.ttf') format('truetype'),
-    font-url(file + '.svg#'+ family) format('svg')
+    font-url(file + '.ttf') format('truetype')
     font-weight weight
     font-style style
     
@@ -89,9 +88,8 @@ toPercents(pixels, width)
   pixels / width * 100%
 
 
-webfont('Lato', '../fonts/lato-regular', normal, normal)
-webfont('Lato', '../fonts/lato-light', 300, normal)
-webfont('Lato', '../fonts/lato-bold', 700, normal)
-webfont('Lato', '../fonts/lato-bolditalic', 700, italic)
-webfont('Lato', '../fonts/lato-lightitalic', 300, italic)
-webfont('Lato', '../fonts/lato-italic', normal, italic)
+webfont('Lato', '../fonts/darkeuphorigenic')
+//webfont('Lato', '../fonts/lato-bold', 700, normal)
+//webfont('Lato', '../fonts/lato-bolditalic', 700, italic)
+//webfont('Lato', '../fonts/lato-lightitalic', 300, italic)
+//webfont('Lato', '../fonts/lato-italic', normal, italic)

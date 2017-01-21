@@ -20,8 +20,6 @@ import bootstrap from 'bootstrap-styl';
 import autoprefixer from 'gulp-autoprefixer';
 import jade from 'gulp-jade';
 import plumber from 'gulp-plumber';
-import tinypng from 'gulp-tinypng-compress';
-import jeet from 'jeet';
 
 gulpLoadPlugins({
     pattern: ['gulp-*', 'gulp.*']
@@ -33,11 +31,11 @@ gulp.task('styles', function() {
         .pipe(stylint())
         .pipe(stylint.reporter())
         .pipe($.stylus({
-            use: [rupture(), bootstrap(), jeet()]
+            use: [rupture(), bootstrap()]
         }))
-        .pipe(combineMq({
-            beautify: true
-        }))
+        // .pipe(combineMq({
+        //     beautify: true
+        // }))
         //.pipe(uncss({
         //     html: ['app/index.html'],
         //     ignore: [/slick/]
@@ -220,16 +218,16 @@ gulp.task('sprites', () => {
 
 gulp.task('icons', function() {
     return gulp.src('app/images/*.svg')
-        .pipe(svgSymbols({
-            svgId: 'icon-%f',
-            className: '.icon-%f',
-            title: false,
-            fontSize: 16,
-            svgoConfig: {
-
-            }
-            //templates: ['default-svg', 'default-demo', 'customCSSTemplate']
-        }))
+        // .pipe(svgSymbols({
+        //     svgId: 'icon-%f',
+        //     className: '.icon-%f',
+        //     title: false,
+        //     fontSize: 16,
+        //     svgoConfig: {
+        //
+        //     }
+        //     //templates: ['default-svg', 'default-demo', 'customCSSTemplate']
+        // }))
         .pipe(gulp.dest('app/images/sprites/'))
         .pipe(gulp.dest('dist/images/sprites/'));
 });
