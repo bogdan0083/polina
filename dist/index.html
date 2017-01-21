@@ -18,12 +18,12 @@
         <header class="header">
             <div class="container">
                 <div class="header__in">
-                    <a class="btn" href="#works" role="button">Work</a>
+                    <a class="btn btn--winona" data-text="Work" href="#works" role="button"><span>Work</span></a>
                     <a href="" class="logo">
                         Polina Poroshina
                         <span class="logo__caption">web and graphic designer</span>
                     </a>
-                    <a class="btn" href="#contact" role="button">Contact</a>
+                    <a class="btn" data-text="Contact" href="#contact" role="button"><span>Contact</span></a>
                 </div>
             </div>
         </header>
@@ -33,8 +33,8 @@
             <section class="intro">
                 <div class="container">
                     <div class="intro__in">
-                        <img src="images/me.png" alt="Hi! That's me!">
-                        <h2 class="heading heading--red">Hi There!</h2>
+                        <img src="images/me.png" alt="Hi! That's me!" class="intro__image">
+                        <h1 class="heading heading--red">Hi There!</h1>
                         <p>My name is Polina. I live in the city of Saratov, Russia. I’m a Web and Graphic Designer as well a Big Dreamer with an obsession for simplicity. I have been designing for over 5 years.  I like to create clean, usable design for the web, cute logos, unique neat icons and illustration of funny characters. I just love my work and I leave a little piece of my heart in everything I do. If you’re looking for an experienced and enthusiastic designer, you’ve found me! </p>
                     </div>
                     <section class="lifetime">
@@ -57,16 +57,29 @@
                <section class="portfolio">
                    <div class="portfolio-sort">
                        <ul>
-                           <li><a href="" class="portfolio__sort-link">All</a></li>
-                           <li><a href="" class="portfolio__sort-link">Web Design</a></li>
-                           <li><a href="" class="portfolio__sort-link">Logo Design</a></li>
-                           <li><a href="" class="portfolio__sort-link">Print Design</a></li>
-                           <li><a href="" class="portfolio__sort-link">Icons & Illustration</a></li>
-                           <li><a href="" class="portfolio__sort-link">Freehand</a></li>
+                           <li><a href="" class="portfolio-sort__link" data-filter="all">All</a></li>
+                           <li><a href="" class="portfolio-sort__link" data-filter="1">Web Design</a></li>
+                           <li><a href="" class="portfolio-sort__link" data-filter="2">Logo Design</a></li>
+                           <li><a href="" class="portfolio-sort__link" data-filter="3">Print Design</a></li>
+                           <li><a href="" class="portfolio-sort__link" data-filter="4">Icons & Illustration</a></li>
+                           <li><a href="" class="portfolio-sort__link" data-filter="5">Freehand</a></li>
                        </ul>
                        <div class="portfolio__items">
-                           <a href="" class="portfolio-item">
+                           <a href="" class="portfolio-item filtr-item" data-category="1">
+                               <img src="images/portfolio-item.jpg" alt="Fitmarket">
                                <div class="portfolio-item__name"><span>Fitmarket</span></div>
+                           </a><a href="" class="portfolio-item filtr-item" data-category="2">
+                               <img src="images/portfolio-item.jpg" alt="Fitmarket">
+                               <div class="portfolio-item__name"><span>Fitmarket</span></div>
+                           </a><a href="" class="portfolio-item filtr-item" data-category="2">
+                               <img src="images/portfolio-item.jpg" alt="Fitmarket">
+                               <div class="portfolio-item__name"><span>Fitmarket</span></div>
+                           </a><a href="" class="portfolio-item filtr-item" data-category="3">
+                               <img src="images/portfolio-item.jpg" alt="Fitmarket">
+                               <div class="portfolio-item__name"><span>Fitmarket</span></div>
+                           </a><a href="" class="portfolio-item filtr-item" data-category="3">
+                               <img src="images/portfolio-item.jpg" alt="Fitmarket">
+                               <div class="portfolio-item__name" data-category="1"><span>Fitmarket</span></div>
                            </a>
                        </div>
                    </div>

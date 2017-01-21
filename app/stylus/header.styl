@@ -1,3 +1,54 @@
 .header
+	text-align: center
+	height: 60px
+	position: fixed
+	width: 100%
+	top: 0
+	left: 0
+	background-color: white
+	z-index: 100
+	border-bottom: 1px solid $gray-light
+	.btn
+		padding 0 10px
+		+above($screen-sm)
+			padding 0 20px
+	.container, &__in
+		height: 100%
+	+above($screen-sm)
+		height: 80px
 	&__in
 		max-width: 530px
+		margin: 0 auto
+		display flex
+		justify-content space-between
+		align-items center
+		height: 100%
+
+
+.logo
+	font-size 1.5rem
+	color $gray
+	font-family 'Dark', 'Fira Sans', sans-serif
+	text-transform: uppercase
+	text-decoration: none
+	line-height: 1
+	+above($screen-sm)
+		font-size: 1.7em
+	span
+		display: block
+		color $red
+		font-size 1.071rem
+		text-transform: none
+		margin-top: 6px
+
+h2 {
+	font-size: 1.7rem
+}
+
+h3 {
+	font-size: 1.4rem
+}
+
+h4 {
+	font-size 1.143rem
+}

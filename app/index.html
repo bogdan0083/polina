@@ -2,130 +2,290 @@
 <html lang="ru">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Главная</title>
-    <!--meta(name='description' content='')-->
-    <!--meta(name='keywords' content='')-->
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
-    <!-- build:css styles/main.css-->
-    <link href="styles/main.css" rel="stylesheet">
-    <!-- endbuild-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Главная</title>
+	<!--meta(name='description' content='')-->
+	<!--meta(name='keywords' content='')-->
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+	<!-- build:css styles/main.css-->
+	<link href="styles/main.css" rel="stylesheet">
+	<!-- endbuild-->
 </head>
 
 <body>
-    <div class="page-wrapper">
-        <!-- begin header -->
-        <header class="header">
-            <div class="container">
-                <div class="header__in">
-                    <a class="btn" href="#works" role="button">Work</a>
-                    <a href="" class="logo">
-                        Polina Poroshina
-                        <span class="logo__caption">web and graphic designer</span>
-                    </a>
-                    <a class="btn" href="#contact" role="button">Contact</a>
-                </div>
-            </div>
-        </header>
-        <!-- end header -->
-        <!-- begin page-content -->
-        <div id="page-content">
-            <section class="intro">
-                <div class="container">
-                    <div class="intro__in">
-                        <img src="images/me.png" alt="Hi! That's me!">
-                        <h2 class="heading heading--red">Hi There!</h2>
-                        <p>My name is Polina. I live in the city of Saratov, Russia. I’m a Web and Graphic Designer as well a Big Dreamer with an obsession for simplicity. I have been designing for over 5 years.  I like to create clean, usable design for the web, cute logos, unique neat icons and illustration of funny characters. I just love my work and I leave a little piece of my heart in everything I do. If you’re looking for an experienced and enthusiastic designer, you’ve found me! </p>
-                    </div>
-                    <section class="lifetime">
-                        <div class="lifetime__col">
-                            <h3 class="heading heading--red">during working time</h3>
-                            <div class="lifetime__icons">
+<div class="page-wrapper">
+	<!-- begin header -->
+	<header class="header">
+		<div class="container">
+			<div class="header__in">
+				<a class="btn" data-text="Work" data-anchor="portfolio" href="#portfolio" role="button"><span>Work</span></a>
+				<a href="" class="logo">
+					Polina Poroshina
+					<span class="logo__caption">web and graphic designer</span>
+				</a>
+				<a class="btn" data-text="Contact" data-anchor="contact" href="#contact" role="button"><span>Contact</span></a>
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- begin page-content -->
+	<div id="page-content">
+		<section class="intro">
+			<div class="container">
+				<div class="intro__in">
+					<img src="images/me.png" alt="Hi! That's me!" class="intro__image">
+					<h1 class="heading heading--red">Hi There!</h1>
+					<p>My name is Polina. I live in the city of Saratov, Russia. I’m a Web and Graphic Designer as well
+						a Big Dreamer with an obsession for simplicity. I have been designing for over 5 years. I like
+						to create clean, usable design for the web, cute logos, unique neat icons and illustration of
+						funny characters. I just love my work and I leave a little piece of my heart in everything I do.
+						If you’re looking for an experienced and enthusiastic designer, you’ve found me! </p>
+				</div>
+				<section class="lifetime">
+					<div class="lifetime__col">
+						<h3 class="heading heading--red">during working time</h3>
+						<div class="lifetime__icons">
+                                <span class="lifetime__icon">
+                                    <img src="images/ps.svg" alt="Photoshop">
+                                </span>
+                                <span class="lifetime__icon">
+                                    <img src="images/ai.svg" alt="Illustrator">
+                                </span>
+                                <span class="lifetime__icon">
+                                    <img src="images/cd.svg" alt="Corel Draw">
+                                </span>
+                                <span class="lifetime__icon">
+                                    <img src="images/flower.svg" alt="Vector graphic">
+                                </span>
+						</div>
+					</div>
+					<div class="lifetime__col">
+						<h3 class="heading heading--red">during free time</h3>
+						<div class="lifetime__icons">
+                                <span class="lifetime__icon">
+                                    <img src="images/scooter.svg" alt="biking">
+                                </span>
+                                <span class="lifetime__icon">
+                                    <img src="images/travel.svg" alt="Traveling">
+                                </span>
+                                <span class="lifetime__icon">
+                                    <img src="images/reading.svg" alt="Reading">
+                                </span><span class="lifetime__icon">
+                                    <img src="images/acting.svg" alt="Acting">
+                                </span>
+						</div>
+					</div>
+				</section>
+			</div>
+		</section>
+		<!-- start portfolio -->
+		<section class="portfolio" id="portfolio" data-section>
+			<div class="portfolio-sort">
+				<ul>
+					<li><a href="" class="portfolio-sort__link" data-filter="all">All</a></li>
+					<li><a href="" class="portfolio-sort__link" data-filter="1">Web Design</a></li>
+					<li><a href="" class="portfolio-sort__link" data-filter="2">Logo Design</a></li>
+					<li><a href="" class="portfolio-sort__link" data-filter="3">Print Design</a></li>
+					<li><a href="" class="portfolio-sort__link" data-filter="4">Icons & Illustration</a></li>
+					<li><a href="" class="portfolio-sort__link" data-filter="5">Freehand</a></li>
+				</ul>
+				<div class="portfolio__items">
+					<a href="" class="portfolio-item filtr-item" data-toggle="modal" data-target="#portfolio-modal" data-category="1">
+						<img src="images/portfolio-item.jpg" alt="Fitmarket">
+						<div class="portfolio-item__name"><span>Fitmarket</span></div>
+					</a><a href="" class="portfolio-item filtr-item" data-toggle="modal" data-target="#portfolio-modal" data-category="2">
+					<img src="images/portfolio-item.jpg" alt="Fitmarket">
+					<div class="portfolio-item__name"><span>Fitmarket</span></div>
+				</a><a href="" class="portfolio-item filtr-item" data-toggle="modal" data-target="#portfolio-modal" data-category="2">
+					<img src="images/portfolio-item.jpg" alt="Fitmarket">
+					<div class="portfolio-item__name"><span>Fitmarket</span></div>
+				</a><a href="" class="portfolio-item filtr-item" data-toggle="modal" data-target="#portfolio-modal" data-category="3">
+					<img src="images/portfolio-item.jpg" alt="Fitmarket">
+					<div class="portfolio-item__name"><span>Fitmarket</span></div>
+				</a><a href="" class="portfolio-item filtr-item" data-toggle="modal" data-target="#portfolio-modal" data-category="3">
+					<img src="images/portfolio-item.jpg" alt="Fitmarket">
+					<div class="portfolio-item__name" data-category="1"><span>Fitmarket</span></div>
+				</a>
+				</div>
+			</div>
+		</section>
+		<!-- end portfolio -->
+		<!-- start contact -->
+		<section class="contact" id="contact" data-section>
+			<div class="container">
+				<div class="contact__in">
+					<img src="images/me-mail.png" alt="Me holding a mail!" class="contact__image">
+					<h2 class="heading heading--red">Let's make something great together!</h2>
+					<p>No matter If you have a question or a project that you want to get started or maybe you just want
+						to hang out together - ride a scooter, go to the theatre, go on a trip or talk about books or If
+						you just want to say Hi, send me an email at
+						<a href="mailto:hello@poroshina.com" class="red-link">hello@poroshina.com</a> or use the contact
+						form:</p>
+					<form class="contact-form">
+						<div class="input">
+							<span class="input__placeholder">Name</span>
+							<input type="text" name="user-name" class="input__control">
+						</div>
+						<div class="input">
+							<span class="input__placeholder">E-mail</span>
+							<input type="text" name="user-mail" class="input__control">
+						</div>
+						<div class="input">
+							<span class="input__placeholder">Message</span>
+							<textarea name="user-text" class="input__control input__control--textarea"></textarea>
+						</div>
+						<button class="btn btn--long js-btn-submit" data-text="send"><span>Send</span></button>
+					</form>
+				</div>
+			</div>
+		</section>
+		<!-- end contact -->
+		<!-- Modal -->
+		<div class="modal fade" id="portfolio-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">Fitmarket</h4>
+					</div>
+					<div class="modal-body">
+						...
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end page-content -->
+	<!-- begin footer -->
+	<footer class="footer">
+		<div class="container">
+			<a class="up js-up" href="">
+				<svg xmlns="http://www.w3.org/2000/svg" width="54.667" height="54.667" viewBox="0 0 223 223" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" class="square-winona">
+					<defs>
+						<style>.str0 {
+							stroke: #e4584b;
+							stroke-width: 5.43599;
+							stroke-linecap: round;
+							stroke-linejoin: round
+						}
 
-                            </div>
-                        </div>
-                        <div class="lifetime__col">
-                            <h3 class="heading heading--red">during free time</h3>
-                            <div class="lifetime__icons">
+						.path-symbol-hover {
+							stroke: white;
+						}
 
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            </section>
-            <!-- start portfolio -->
-               <section class="portfolio">
-                   <div class="portfolio-sort">
-                       <ul>
-                           <li><a href="" class="portfolio__sort-link">All</a></li>
-                           <li><a href="" class="portfolio__sort-link">Web Design</a></li>
-                           <li><a href="" class="portfolio__sort-link">Logo Design</a></li>
-                           <li><a href="" class="portfolio__sort-link">Print Design</a></li>
-                           <li><a href="" class="portfolio__sort-link">Icons & Illustration</a></li>
-                           <li><a href="" class="portfolio__sort-link">Freehand</a></li>
-                       </ul>
-                       <div class="portfolio__items">
-                           <a href="" class="portfolio-item">
-                               <div class="portfolio-item__name"><span>Fitmarket</span></div>
-                           </a>
-                       </div>
-                   </div>
-               </section>
-            <!-- end portfolio -->
-            <!-- start contact -->
-               <section class="contact">
-                   <div class="container">
-                       <div class="contact__in">
-                           <img src="images/me-mail.png" alt="Me holding a mail!" class="contact__image">
-                           <h2 class="heading heading--red">Hi There!</h2>
-                           <p>No matter If you have a question or a project that you want to get started or maybe you just want to hang out together - ride a scooter, go to the theatre, go on a trip or talk about books or If you just want to say Hi,send me an email at <a href="mailto:hello@poroshina.com" class="red-link">hello@poroshina.com</a> or use the contact form:</p>
-                           <form class="contact-form">
-                               <div class="input">
-                                   <span class="input__placeholder">Name</span>
-                                   <input type="text" name="user-name" class="input__control">
-                               </div>
-                               <div class="input">
-                                   <span class="input__placeholder">E-mail</span>
-                                   <input type="text" name="user-mail" class="input__control">
-                               </div>
-                               <div class="input">
-                                   <span class="input__placeholder">Message</span>
-                                   <textarea name="user-text" class="input__control input__control--textarea"></textarea>
-                               </div>
-                               <button class="btn js-btn-submit">Send</button>
-                           </form>
-                       </div>
-                   </div>
-               </section>
-            <!-- end contact -->
-        </div>
-        <!-- end page-content -->
-        <!-- begin footer -->
-        <footer class="footer">
-            <div class="container">
-                <button class="up js-up"></button>
-                <div class="copyright">Copyright © 2017 Polina Poroshina. All rights reserved.</div>
-                <div class="socials">
+						.fil0 {
+							fill: none
+						}
+						</style>
+					</defs>
+					<g>
+						<g>
+							<path class="fil0 str0 path-square" d="M3 3h217v217H3z"/>
+							<path class="fil0 str0 path-symbol" d="M172 144l-60-68-60 68"/>
+							<path class="fil0 str0 path-symbol-hover" d="M172 144l-60-68-60 68"/>
+						</g>
+					</g>
+				</svg>
+			</a>
+			<div class="copyright">Copyright © 2017 Polina Poroshina. All rights reserved.</div>
+			<div class="socials">
+				<a href="" class="social-link social-link--fb">
+					<svg xmlns="http://www.w3.org/2000/svg" width="54.667" height="54.667" viewBox="0 0 513 513" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" class="square-winona square-winona--black">
+						<defs>
+							<style>.str4 {
+								stroke: #4a4949;
+								stroke-width: 12.5015;
+								stroke-linecap: round;
+								stroke-linejoin: round
+							}
 
-                </div>
-            </div>
-        </footer>
-        <!-- end footer -->
-    </div>
-    <!-- build:js scripts/jquery.min.js-->
-    <!-- bower:js-->
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <!-- endbower-->
-    <!-- endbuild-->
-    <!-- build:js scripts/libs.js-->
-    <script src="scripts/slick.min.js"></script>
-    <script src="scripts/jquery.fancybox.pack.js"></script>
-    <!-- endbuild-->
-    <!-- build:js scripts/main.js-->
-    <script src="scripts/main.js"></script>
-    <!-- endbuild-->
+							.fil4 {
+								fill: none
+							}
+							.path-symbol-hover {
+								stroke: white;
+							}
+							</style>
+						</defs>
+						<g>
+							<g>
+								<path class="fil4 str4" d="M6 6h500v500H6z"/>
+								<g id="_642251664">
+									<path class="fil4 str4" d="M297 129c-25-3-38 4-46 18-7 13-8 30-8 48v188M210 228h85"/>
+									<path class="fil4 str4 path-symbol-hover" d="M297 129c-25-3-38 4-46 18-7 13-8 30-8 48v188M210 228h85"/>
+								</g>
+							</g>
+						</g>
+					</svg>
+				</a>
+				<a href="" class="social-link">
+					<svg xmlns="http://www.w3.org/2000/svg" width="54.667" height="54.667" viewBox="0 0 1710 1710" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" class="square-winona square-winona--black">
+						<defs>
+							<style>.str1 {
+								stroke: #4a4949;
+								stroke-width: 41.7044;
+								stroke-linecap: round;
+								stroke-linejoin: round
+							}
+
+							.fil1 {
+								fill: none
+							}
+							.path-symbol-hover {
+								stroke: white;
+							}
+							</style>
+						</defs>
+						<g id="Layer_x0020_1">
+							<path class="fil1 str1" d="M21 21h1668v1668H21z"/>
+							<path class="fil1 str1" d="M401 587c39 226 222 473 459 516V586M1304 1107c-126-218-273-185-444-236 129-38 400-142 449-283"/>
+							<path class="fil1 str1 path-symbol-hover" d="M401 587c39 226 222 473 459 516V586M1304 1107c-126-218-273-185-444-236 129-38 400-142 449-283"/>
+						</g>
+					</svg>
+					<defs>
+						<style>.str3 {
+							stroke: #4a4949;
+							stroke-width: 12.5015;
+							stroke-linecap: round;
+							stroke-linejoin: round
+						}
+
+						.fil3 {
+							fill: none
+						}</style>
+					</defs>
+					<g id="Layer_x0020_1">
+						<g id="_642251600">
+							<path class="fil0 str3" d="M6 6h500v500H6z"/>
+							<g id="_642251664">
+								<path class="fil3 str3" d="M297 129c-25-3-38 4-46 18-7 13-8 30-8 48v188M210 228h85"/>
+							</g>
+						</g>
+					</g>
+					</svg>
+				</a>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+</div>
+<!-- build:js scripts/jquery.min.js-->
+<!-- bower:js-->
+<script src="/bower_components/jquery/dist/jquery.js"></script>
+<!-- endbower-->
+<!-- endbuild-->
+<!-- build:js scripts/libs.js-->
+<script src="scripts/imagesloaded.js"></script>
+<script src="scripts/jquery.filterizr.min.js"></script>
+<script src="scripts/transition.js"></script>
+<script src="scripts/modal.js"></script>
+<!-- endbuild-->
+<!-- build:js scripts/main.js-->
+<script src="scripts/main.js"></script>
+<!-- endbuild-->
 </body>
 
 </html>
